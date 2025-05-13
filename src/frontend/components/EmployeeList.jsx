@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, memo } from 'react';
 
 const EmployeeList = ({ employees }) => {
   const [page, setPage] = useState(1);
@@ -52,4 +52,4 @@ const EmployeeList = ({ employees }) => {
   );
 };
 
-export default EmployeeList;
+export default memo(EmployeeList);

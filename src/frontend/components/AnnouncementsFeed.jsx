@@ -1,4 +1,4 @@
-import React from 'react';
+import { memo } from 'react';
 
 const AnnouncementsFeed = ({ announcements }) => {
   return (
@@ -18,4 +18,4 @@ const AnnouncementsFeed = ({ announcements }) => {
   );
 };
 
-export default AnnouncementsFeed;
+export default memo(AnnouncementsFeed);
