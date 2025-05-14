@@ -2,10 +2,10 @@
 import { Routes, Route } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import { useDashboard } from './context/DashboardContext';
-import ProtectedRoute from './frontend/components/ProtectedRoute';
+import ProtectedRoute from './frontend/auth/ProtectedRoute';
 
 const Dashboard = lazy(() => import('./frontend/components/Dashboard'));
-const Login = lazy(() => import('./frontend/components/Login'));
+const Login = lazy(() => import('./frontend/auth/Login'));
 
 const App = () => {
   const { state } = useDashboard();
